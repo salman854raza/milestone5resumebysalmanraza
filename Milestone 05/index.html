@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone 5: Unique Path and Shareable Link Task 1 By Mehak Alamgir</h>
+        <p>Unique URL Generation (50 points): </p>
+        <p>Does the system generate a unique path for each user's resume based on their username</p>
+        <form id="resumeform">
+            <!-- Personal information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <lebel for="username" >Resume URL</lebel>
+                <input type="text" id="username" name="username" required><br/>
+
+
+
+
+
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="email">Email:</label>
+                <input for="email" id="email" name="email" required>
+
+                    <label for="phone">Mobile Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="address">Adress:</label>
+                    <input type="add" id="add" name="add" required>
+
+                    <!-- profile picture -->
+                <label for="profilePicture">Profile Image</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="Image/*" required>
+                    
+            </fieldset>
+
+<!-- Education -->
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education</label>
+                <textarea id="education" name="education" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Experience</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume Below</button>
+            
+        </form>
+        <div id="resumeOutput">
+            <!-- Resume will be Generated Below -->
+            <h2>Your Resume</h2>
+            <img id="profileOutput" class="profilePicture" src="#" alt="Profile Picture">
+    
+            <div class="personalInfo">
+                <h3 class="section-title">Personal Information</h3>
+                <p id="nameOutput"></p>
+                <p id="emailOutput"></p>
+                <p id="phoneOutput"></p>
+                <p id="addressOutput"></p>
+            </div>
+    
+            <div class="education">
+                <h3 class="section-title">Education</h3>
+                <p id="educationOutput"></p>
+            </div>
+    
+            <div class="experience">
+                <h3 class="section-title">Experience</h3>
+                <p id="experienceOutput"></p>
+            </div>
+    
+            <div class="skills">
+                <h3 class="section-title">Skills</h3>
+                <p id="skillsOutput"></p>
+            </div>
+        </div>
+    
+        <script src="./script.js" defer></script> 
+    </body>
+    </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div id="resumeOutput">
+             Resume will be Generated Below -->
+        <!-- </div> -->
+
+        <!-- <script src="./script.js"></script> -->
+     <!-- --> 
